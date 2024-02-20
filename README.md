@@ -5,7 +5,8 @@
 
 ### 鸿蒙HarmonyOS的第一个demo项目：
 [git地址](https://github.com/lcyh/xmshop)
-![输入图片说明](entry/src/main/resources/base/media/home.png)
+
+![首页](entry/src/main/resources/base/media/home.png)
 
 ### 参考教程：
 
