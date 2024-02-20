@@ -1,0 +1,33 @@
+
+export const BestCateListData = [
+  {
+    imgUrl:"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/514e2231d5d650cf74deaf6eaa60e11c.png",
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f2fec190be4c4ef53342d0a8ecdde5f.jpg'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4b8c83d93c37d6cb35bd9071568944ea.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2bc35b6be2ab377bfc7e8fddeaa54c5.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fed94691e4b361f237d411c3f687c2d4.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b9b8b8e686044afb2585e78a03ee96b6.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b3304e52970aa972c4f4ccd6eb424ad7.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d41a54c825db28e47888db6bd61349de.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/94cefdac1c573830b53d72ae7568b7a2.png'
+  },
+  {
+    imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e47dad0c224065a73a4c722eeaf1b8e1.jpg'
+  }
+]
