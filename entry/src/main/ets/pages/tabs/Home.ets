@@ -132,7 +132,7 @@ export struct Home {
       .scrollable(ScrollDirection.Vertical)
       .scrollBar(BarState.On) // 滚动条常驻显示
       .scrollBarColor(Color.Gray) // 滚动条颜色
-      .scrollBarWidth(10) // 滚动条宽度
+      .scrollBarWidth(0) // 滚动条宽度
       .edgeEffect(EdgeEffect.None)
       .onScroll((xOffset: number, yOffset: number) => {
         this.scrollY = this.scroller.currentOffset().yOffset + yOffset
