@@ -1,10 +1,10 @@
 {
-  "name": "entry",
-  "version": "1.0.0",
-  "description": "Please describe the basic information.",
-  "main": "",
-  "author": "",
   "license": "",
+  "devDependencies": {},
+  "author": "lc",
+  "name": "entry",
+  "description": "lc商城",
+  "main": "",
+  "version": "1.0.0",
   "dependencies": {}
 }
-
