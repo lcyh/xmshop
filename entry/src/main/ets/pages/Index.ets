@@ -1,4 +1,5 @@
 import { Home } from './tabs/Home';
+import { Cate } from './tabs/Cate';
 
 @Entry
 @Component
@@ -37,7 +38,8 @@ struct Index {
         }.tabBar(this.TabBuilder("首页", 0, $r("app.media.home_icon"), $r("app.media.home_selected_icon")))
 
         TabContent() {
-          Text('Cate')
+          // Text('Cate')
+          Cate()
         }.tabBar(this.TabBuilder("分类", 1, $r("app.media.cate_icon"), $r("app.media.cate_selected_icon")))
 
         TabContent() {

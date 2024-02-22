@@ -1,7 +1,7 @@
 import { BestCateItemProps } from '../../Models/BestCate'
 import { BestCateListData } from '../../Models/MockData'
 
-@Preview
+@Entry
 @Component
 export struct Home {
   @State searchVal: string = '123'
@@ -16,51 +16,54 @@ export struct Home {
       Row() {
         if (this.scrollY < 60)
           Image($r("app.media.xiaomi_icon"))
-            .width('88lpx')
-            .height("88lpx")
+            .width('60lpx')
+            .height("60lpx")
+            .objectFit(ImageFit.Contain)
             .fillColor(Color.White)
-            .margin({ right: '44lpx' })
+            .margin({ right: '20' })
 
         Row() {
           Search({ value: this.searchVal,
             placeholder: '手机' })
-            .height('96lpx')
+            .height('60lpx')
             .backgroundColor('#FCF3EC')
             .placeholderColor(Color.Grey)
             .placeholderFont({ size: "38lpx", weight: 400 })
-            .textFont({ size: "38lpx", weight: 400 })
+            .textFont({ size: "20lpx", weight: 400 })
             .onChange((value: string) => {
               console.log('搜索', value)
               this.searchVal = value
             })
             .margin({
-              right: "44lpx"
+              right: "20"
             })
         }
         // .layoutWeight(1)
-        .width(this.scrollY > 60 ? '380lpx' : '280lpx')
+        .width(this.scrollY > 60 ? '480lpx' : '380lpx')
         .animation({
           duration: 500,
           playMode: PlayMode.Alternate
         })
 
         Row() {
-          Image($r("app.media.qrcode_icon")).width('66lpx').height("66lpx").fillColor(Color.White)
-          Image($r("app.media.message_icon")).width('66lpx').height("66lpx").fillColor(Color.White)
+          Image($r("app.media.qrcode_icon")).width('60lpx').height("60lpx").fillColor(this.scrollY<60?Color.White:'#666')
+          Image($r("app.media.message_icon")).width('60lpx').height("60lpx").fillColor(this.scrollY<60?Color.White:'#666')
             .margin({
-              left: "54lpx"
+              left: "20lpx"
             })
         }.width("200lpx")
       }
       .width("100%")
-      .height("140lpx")
       .padding({
-        left: "34lpx",
-        right: "34lpx"
+        left: "30lpx",
+        right: "30lpx",
+        top:'20lpx',
+        bottom:'20lpx',
       })
+      .borderRadius(10)
       .justifyContent(FlexAlign.SpaceBetween)
-      .backgroundColor(this.scrollY > 60 ? '#000' : Color.Transparent)
-      .opacity(this.scrollY > 60 ? .5 : 1)
+      .backgroundColor(this.scrollY > 60 ? '#e0e0e0' : Color.Transparent)
+      // .opacity(this.scrollY > 60 ? .5 : 1)
     }
   }
 
